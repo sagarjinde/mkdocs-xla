@@ -1,0 +1,72 @@
+site_name: SJ XLA Notes
+theme:
+  name: material
+  features:
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  favicon: images/robot-excited.svg
+  icon:
+    logo: material/robot-excited
+  palette:
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: black
+      accent: blue
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: white
+      accent: blue 
+  features:
+    - navigation.footer
+
+nav:
+  - 'Home': index.md
+  - 'XLA Structure':
+    - 'XLA Structure': structure/index.md
+    - 'HloModule': structure/HloModule.md
+    - 'HloComputation': structure/HloComputation.md
+    - 'HloInstruction': structure/HloInstruction.md
+    - 'Shape': structure/Shape.md
+    - 'Layout': structure/Layout.md
+    - 'HloSchedule': structure/HloSchedule.md
+    - 'HloInstructionSequence': structure/HloInstructionSequence.md
+    - 'XlaBuilder': structure/XlaBuilder.md
+    - 'XlaComputation': structure/XlaComputation.md
+    - 'XlaOp': structure/XlaOp.md
+    - 'ProgramShape': structure/ProgramShape.md
+    - 'Client': structure/Client.md
+    - 'Service': structure/Service.md
+    - 'Executable': structure/Executable.md
+    - 'Stream': structure/Stream.md
+    - 'StreamExecutor': structure/StreamExecutor.md
+    - 'Kernel': structure/Kernel.md
+    - 'HloEvaluator': structure/HloEvaluator.md
+    - 'Literal': structure/Literal.md
+    - 'BufferAssignment': structure/BufferAssignment.md
+    - 'BufferAllocation': structure/BufferAllocation.md
+  - 'Call Graph': callGraph/index.md
+  - 'Setup Debugger': debugger/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
