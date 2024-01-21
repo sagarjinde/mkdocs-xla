@@ -1,5 +1,5 @@
 # My XLA Notes
-[sagarjinde.github.io/mkdocs-xla](sagarjinde.github.io/mkdocs-xla)
+[sagarjinde.github.io/mkdocs-xla](https://sagarjinde.github.io/mkdocs-xla/)
 
 These notes provide structural and functional overview on [XLA](https://github.com/openxla/xla) Compiler.
 
