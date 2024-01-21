@@ -6,11 +6,11 @@ These notes provide structural and functional overview on [XLA](https://github.c
 ## Notes contain
 
 ### XLA Structure
-This captures interaction between XLA classes.
+This captures the interaction between XLA classes.
 ![XLA Structure](imgs/XLAStructure.png)
 
 Each class contains:
-1. A small discription about the class
+1. A small description about the class
 2. Attributes Overview
 3. Functions Overview
 
